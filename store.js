@@ -10,10 +10,10 @@ const STATES = [
       name: 'Alaska',
       abbreviation: 'AK'
   },
-  // {
-  //     name: 'American Samoa',
-  //     abbreviation: 'AS'
-  // },
+  {
+      name: 'American Samoa',
+      abbreviation: 'AS'
+  },
   {
       name: 'Arizona',
       abbreviation: 'AZ'
@@ -42,10 +42,10 @@ const STATES = [
   //     name: 'District Of Columbia',
   //     abbreviation: 'DC'
   // },
-  // {
-  //     name: 'Federated States Of Micronesia',
-  //     abbreviation: 'FM'
-  // },
+  {
+      name: 'Federated States Of Micronesia',
+      abbreviation: 'FM'
+  },
   {
       name: 'Florida',
       abbreviation: 'FL'

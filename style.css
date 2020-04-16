@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /* border: 1px red solid; */
 }
 
 body {
@@ -14,8 +15,34 @@ main {
   margin: auto;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 h1 {
   font-size: 1.4rem;
+}
+
+.park-name {
+  border-top: 1px solid black;
+}
+
+li:first-child .park-name {
+  margin-top: 20px;
+}
+
+.park-name {
+  margin-top: 60px;
+  padding-top: 10px;
+}
+
+.park-description {
+  color: #444;
+}
+
+.park-website a:hover {
+  background: rgb(112, 205, 221);
 }
 
 label {
@@ -43,6 +70,10 @@ button {
   display: none;
 }
 
-.error-msg {
+.js-error-msg {
   color: red;
+}
+
+.js-please-wait {
+  color: rgb(19, 127, 228);
 }
