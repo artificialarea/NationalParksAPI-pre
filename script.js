@@ -54,14 +54,25 @@ function fetchListOfStates() {
 
 // TEMPLATE GENERATORS ///////////////////////////////////////
 
-function generateStateParkInfo() {
+function generateStateParkInfo(STATES) {
   // extract .map all relevant key/values into array
   // return as string
+  
 }
 
-function generateDropdownMenu() {
-    // extract .map all relevant key/values into array
-    // return as string of <options>
+function generateDropdownMenu(STATES) {
+  // extract .map all relevant key/values into array
+  // return as string of <options>
+  console.log(STATES);
+  const options = STATES.map(item => {
+    // console.log(item.name);
+    return `<option value=${item.abbreviation}>${item.name}</option>`;
+  });
+  console.log(options);
+  return `
+    <option value="" disabled selected>Select a State</option>
+    ${options}
+  `;
 }
 
 
@@ -75,8 +86,13 @@ function renderStateParkInfo() {
 
 function renderDropdownMenu() {
   // fetch list of states available
+  // ^^^^^^^^ couldn't find in API so just made a local store.js of it
+  
   // generate list of <options>
+  const listOfStates = generateDropdownMenu(STATES);
+
   // render HTML in the DOM
+  $('#js-select-state').html(listOfStates);
 }
 
 

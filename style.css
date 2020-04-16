@@ -27,12 +27,22 @@ label {
 input, select {
   display: block;
   margin: 0 0 10px 0;
+  padding: 5px 10px;
+}
+
+input {
+  max-width: 60px;
 }
 
 button {
   margin: 10px 0 10px 0;
+  padding: 5px 10px;
 }
 
 .hidden {
   display: none;
+}
+
+.error-msg {
+  color: red;
 }
