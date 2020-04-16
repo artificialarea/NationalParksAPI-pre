@@ -11,11 +11,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>National Park Service Finder</h1>
+  </header>
   <main>
+    <form id="search-form">
+      <label for="select-date">State:</label>
+      <select id="js-select-state" name="select-state" placeholder="Select State..." requried></select>
+      <label for="max-num-results">Limit number of results to:</label>
+      <input type="text" id="max-num-results" name="max-num-results" value="10" required>
+      <button type="submit">Submit</button>
+    </form>
 
-  
-  
-  
+    <section id="js-results" class="hidden">
+      <ul id="js-list-results"></ul>
+    </section>
   
   </main>
 
