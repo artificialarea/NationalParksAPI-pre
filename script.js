@@ -73,7 +73,7 @@ function fetchStateParkInfo(state, maxResults) {
   // fetch(url, options)
   fetch(url)
   .then(response => {
-    console.log('response');
+    console.log('response to fetch query');
     if(!response.ok) {
       throw new Error(response.statusText);
     }
@@ -101,11 +101,11 @@ function fetchListOfStates() {
 
 // TEMPLATE GENERATORS ///////////////////////////////////////
 
-function generateStateParkInfo(STATES) {
+// n/a because currently generating in renderStateParkInfo(dataInfo), too
+// may ** REFACTOR ** later to incorporate
+function generateStateParkInfo(dataInfo) {
   // extract .map all relevant key/values into array
   // return as string
-
-  
 }
 
 function formatQueryParams(params) {
@@ -142,7 +142,7 @@ function renderStateParkInfo(dataInfo) {
   // clear out previous result, if applicable
   $('#js-list-results').empty();
   // generate info into HTML
-  // const results = generateStateParkInfo(data);
+  // const results = generateStateParkInfo(dataInfo);
   for (let i=0; i < dataInfo.data.length; i++) {
     $('#js-list-results').append(`
     <li> 
